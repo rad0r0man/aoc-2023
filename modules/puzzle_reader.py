@@ -1,2 +1,3 @@
 def puzzle_reader(file_name: str) -> list:
-    pass
+    with open(file_name, "r") as f:
+        return [line.rstrip() for line in f]
